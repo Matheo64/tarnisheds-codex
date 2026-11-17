@@ -1,0 +1,32 @@
+{% extends "admin/change_form.html" %}
+{% block after_field_sets %}
+<fieldset class="module aligned">
+  <h2>Colocar en el mapa</h2>
+  <p class="help">Elige la capa y haz clic sobre la imagen: X e Y se rellenan solos (en %). Después pulsa «Guardar».</p>
+  <div id="placer" style="position:relative;display:inline-block;max-width:100%;cursor:crosshair;border:2px solid #c19d53;line-height:0">
+    <img id="placer-img" alt="" style="display:block;width:min(100%,820px);height:auto">
+    <span id="placer-pin" style="display:none;position:absolute;width:16px;height:16px;margin:-8px 0 0 -8px;border-radius:50%;background:#b5694a;border:2px solid #fff;box-shadow:0 0 0 2px #000"></span>
+  </div>
+</fieldset>
+{{ capas_json|json_script:"capas-json" }}
+<script>
+(function(){
+  var capas=JSON.parse(document.getElementById('capas-json').textContent);
+  var sel=document.getElementById('id_capa'),X=document.getElementById('id_x'),Y=document.getElementById('id_y');
+  var box=document.getElementById('placer'),img=document.getElementById('placer-img'),pin=document.getElementById('placer-pin');
+  function pinFromFields(){
+    if(X.value===''||Y.value===''){pin.style.display='none';return;}
+    pin.style.left=X.value+'%';pin.style.top=Y.value+'%';pin.style.display='block';
+  }
+  function cargarCapa(){var c=capas[sel.value];if(c){img.src=c.url;box.style.display='inline-block';}else{box.style.display='none';}pinFromFields();}
+  img.addEventListener('click',function(e){
+    var r=img.getBoundingClientRect();
+    X.value=(((e.clientX-r.left)/r.width)*100).toFixed(2);
+    Y.value=(((e.clientY-r.top)/r.height)*100).toFixed(2);
+    pinFromFields();
+  });
+  sel.addEventListener('change',cargarCapa);X.addEventListener('input',pinFromFields);Y.addEventListener('input',pinFromFields);
+  cargarCapa();
+})();
+</script>
+{% endblock %}

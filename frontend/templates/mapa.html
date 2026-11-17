@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Mapa · Tarnished’s Codex{% endblock %}
+{% block body_class %}pagina-mapa{% endblock %}
+{% block head %}
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+{% endblock %}
+{% block content %}
+<main class="stage" id="stage">
+  {% if request.user.is_superuser %}{% csrf_token %}{% endif %}
+  <div class="aviso" id="aviso" hidden></div>
+  <div id="mapa" aria-label="Mapa de las Tierras Intermedias"></div>
+  <div class="vineta"></div>
+
+  <aside class="capas" aria-label="Capas del mapa"><div class="t">Capas del mapa</div><div id="capas"></div></aside>
+  <div class="badge" id="badge" hidden></div>
+  <div class="legend">
+    <div class="lbl">Leyenda</div>
+    <div><i class="dot boss"></i> Jefes</div><div><i class="dot weapon"></i> Equipo</div>
+    <div><i class="dot talisman"></i> Talismanes</div><div><i class="dot npc"></i> NPCs</div>
+    <div><i class="dot item"></i> Otros</div>
+  </div>
+
+  <aside class="panel" id="panel" aria-label="Códice">
+    <button class="ptab" id="ptab" type="button" aria-expanded="true">Códice ▸</button>
+    <div class="phead">Códice <small id="pcount"></small></div>
+    <div class="psearch"><input id="q" type="search" placeholder="Buscar por nombre…" autocomplete="off" aria-label="Buscar por nombre"></div>
+    <div class="crumbs" id="crumbs"></div>
+    <div class="pbody" id="pbody"></div>
+  </aside>
+</main>
+{{ datos|json_script:"datos" }}
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="{% static 'js/mapa.js' %}"></script>
+{% endblock %}

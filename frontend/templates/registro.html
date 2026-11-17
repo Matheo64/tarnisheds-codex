@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}{{ r.nombre }} · Tarnished’s Codex{% endblock %}
+{% block content %}
+<main class="doc">
+  <p class="crumb"><a href="{% url 'mapa' %}">Mapa</a> › {{ r.categoria }}</p>
+  <div class="ficha">
+    {% if r.imagen_src %}<img class="foto" src="{{ r.imagen_src }}" alt="{{ r.nombre }}">{% endif %}
+    <div>
+      <span class="pill">{{ r.categoria.nombre }}</span>
+      <h1 class="h1">{{ r.nombre }}</h1>
+      <p class="dropcap">{{ r.descripcion|default:"Sin descripción." }}</p>
+      {% if r.ubicacion_texto %}<h2 class="h2">Dónde se encuentra</h2><p>{{ r.ubicacion_texto }}</p>{% endif %}
+      <h2 class="h2">En el mapa</h2>
+      {% if marcadores %}
+      <ol class="fases">
+        {% for m in marcadores %}
+        <li><a href="{% url 'mapa' %}?registro={{ r.slug }}&fase={{ forloop.counter }}"><b>{{ m.fase|default:"Ubicación" }}</b> <small>{{ m.capa.nombre }}</small></a></li>
+        {% endfor %}
+      </ol>
+      {% else %}<p class="muted">Este objeto todavía no tiene ubicación en el mapa.</p>{% endif %}
+    </div>
+  </div>
+</main>
+{% endblock %}
