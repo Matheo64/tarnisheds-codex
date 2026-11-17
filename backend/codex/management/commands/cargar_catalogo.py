@@ -72,7 +72,7 @@ class Command(BaseCommand):
             reg, _ = Registro.objects.update_or_create(slug=slugify(item["nombre"])[:160], defaults=dict(
                 nombre=api.get("name") or item["nombre"],
                 categoria=cats[item["categoria"]],
-                descripcion=api.get("description") or item["descripcion_respaldo"],
+                descripcion=item.get("descripcion_es") or api.get("description") or item["descripcion_respaldo"],
                 imagen_url=api.get("image") or "",
                 imagen_local=item.get("imagen_local", ""),
                 ubicacion_texto=api.get("location") or "",

@@ -182,7 +182,8 @@
      "fase": ""
     }
    ],
-   "imagen_local": "img/objetos/margit-the-fell-omen.jpg"
+   "imagen_local": "img/objetos/margit-the-fell-omen.jpg",
+   "descripcion_es": "Jefe que guarda la entrada al castillo de Stormveil."
   },
   {
    "nombre": "Godrick the Grafted",
@@ -197,7 +198,8 @@
      "y": 71.0,
      "fase": ""
     }
-   ]
+   ],
+   "descripcion_es": "Godrick el Injertado es el gobernante del castillo de Stormveil y empuña una gran hacha dorada. Se ha injertado muchos brazos en el cuerpo, símbolo de poder para quienes intenten derrocarlo."
   },
   {
    "nombre": "Mimic Tear",
@@ -212,7 +214,8 @@
      "y": 58.0,
      "fase": ""
     }
-   ]
+   ],
+   "descripcion_es": "Un ser excéntrico capaz de adoptar la forma completa de su adversario, desde los rasgos corporales hasta el armamento."
   },
   {
    "nombre": "Starscourge Radahn",
@@ -227,7 +230,8 @@
      "y": 69.0,
      "fase": ""
     }
-   ]
+   ],
+   "descripcion_es": "El general Radahn está maldito y condenado a vagar para siempre. Devorado desde dentro por la podredumbre escarlata de Malenia, hace tiempo que perdió el juicio. Ahora reúne los cadáveres de antiguos amigos y enemigos por igual y se ceba con ellos, como un perro."
   },
   {
    "nombre": "Malenia, Blade of Miquella",
@@ -242,7 +246,8 @@
      "y": 9.0,
      "fase": ""
     }
-   ]
+   ],
+   "descripcion_es": "...Escucha mis palabras. Soy Malenia, la Espada de Miquella. Y jamás he conocido la derrota."
   },
   {
    "nombre": "Blaidd the Half-Wolf",
@@ -286,7 +291,8 @@
      "fase": "Castillo Redmane (Radahn)",
      "orden": 5
     }
-   ]
+   ],
+   "descripcion_es": "Guerrero lobo que cambia de lugar según avanzas en su misión."
   },
   {
    "nombre": "Melina",
@@ -294,7 +300,8 @@
    "endpoint": "npcs",
    "categoria": "npcs",
    "descripcion_respaldo": "Doncella que te ofrece su ayuda y te acompaña desde los primeros pasos.",
-   "marcadores": []
+   "marcadores": [],
+   "descripcion_es": "Doncella que te ofrece su ayuda y te acompaña desde los primeros pasos."
   },
   {
    "nombre": "Sellen",
@@ -302,7 +309,8 @@
    "endpoint": "npcs",
    "categoria": "npcs",
    "descripcion_respaldo": "Hechicera de la que se aprende magia; aparece en Waypoint Ruins.",
-   "marcadores": []
+   "marcadores": [],
+   "descripcion_es": "Hechicera de la que se aprende magia; aparece en Waypoint Ruins."
   },
   {
    "nombre": "Uchigatana",
@@ -310,7 +318,8 @@
    "endpoint": "weapons",
    "categoria": "armas",
    "descripcion_respaldo": "Katana ligera con sangrado.",
-   "marcadores": []
+   "marcadores": [],
+   "descripcion_es": "Una katana de hoja larga, curva y de un solo filo. Arma singular que empuñan los samuráis de la Tierra de las Cañas. La hoja, de diseño ondulado, posee un filo extraordinario y sus tajos provocan pérdida de sangre."
   },
   {
    "nombre": "Moonveil",
@@ -318,7 +327,8 @@
    "endpoint": "weapons",
    "categoria": "armas",
    "descripcion_respaldo": "Katana mágica con una habilidad de ráfaga lunar.",
-   "marcadores": []
+   "marcadores": [],
+   "descripcion_es": "Katana forjada con glintstone. Obra maestra de un forjador de palabras de Sellia. La luz envuelve la hoja cuando está envainada, lo que explica su nombre, Moonveil."
   },
   {
    "nombre": "Rivers of Blood",
@@ -326,7 +336,8 @@
    "endpoint": "weapons",
    "categoria": "armas",
    "descripcion_respaldo": "Katana de sangrado muy ofensiva.",
-   "marcadores": []
+   "marcadores": [],
+   "descripcion_es": "Arma de Okina, espadachín de la Tierra de las Cañas. Un arma maldita que ha abatido a incontables hombres. Cuando Mohg, el Señor de la Sangre, sintió por primera vez en su carne la espada y la locura de Okina, le hizo una propuesta: ofrecerle la vida de un demonio cuya sed jamás quedaría saciada."
   },
   {
    "nombre": "Raging Wolf Armor",
@@ -334,7 +345,8 @@
    "endpoint": "armors",
    "categoria": "armaduras",
    "descripcion_respaldo": "Armadura asociada a la misión de Blaidd.",
-   "marcadores": []
+   "marcadores": [],
+   "descripcion_es": "Armadura que vistió Vargram el Lobo Furioso, uno de los primeros Tarnished en llegar a la Roundtable Hold."
   },
   {
    "nombre": "Carian Knight's Shield",
@@ -342,7 +354,8 @@
    "endpoint": "shields",
    "categoria": "escudos",
    "descripcion_respaldo": "Escudo de la caballería caria.",
-   "marcadores": []
+   "marcadores": [],
+   "descripcion_es": "Escudo en forma de lágrima con incrustaciones de glintstones azules. Lo portaban los caballeros que servían a la familia real de Carian. Destaca frente a ataques mágicos o sagrados. ¿Con quién se preparaban a luchar esos caballeros?"
   },
   {
    "nombre": "Radagon's Soreseal",
@@ -350,7 +363,8 @@
    "endpoint": "talismans",
    "categoria": "talismanes",
    "descripcion_respaldo": "Talismán que aumenta atributos a cambio de más daño recibido.",
-   "marcadores": []
+   "marcadores": [],
+   "descripcion_es": "Este legendario talismán es un ojo grabado con una Runa del Elden; se dice que es el sello del rey consorte Radagon."
   },
   {
    "nombre": "Erdtree's Favor",
@@ -358,7 +372,8 @@
    "endpoint": "talismans",
    "categoria": "talismanes",
    "descripcion_respaldo": "Talismán que aumenta vida, aguante y carga.",
-   "marcadores": []
+   "marcadores": [],
+   "descripcion_es": "Talismán que representa una bendición especial del Erdtree. Aumenta ligeramente los PV máximos, la resistencia y la carga de equipo."
   },
   {
    "nombre": "Lion's Claw",
@@ -366,7 +381,8 @@
    "endpoint": "ashes",
    "categoria": "cenizas-de-guerra",
    "descripcion_respaldo": "Ceniza de guerra con un salto de garra.",
-   "marcadores": []
+   "marcadores": [],
+   "descripcion_es": "Esta Ceniza de Guerra concede a un arma la afinidad Pesada y la siguiente habilidad: «Lion's Claw: habilidad de los Redmane, que lucharon junto al general Radahn. Da una voltereta hacia delante y golpea a los enemigos con el arma». Se puede usar en espadas, hachas y martillos (excepto armas pequeñas y espadas de estocada)."
   },
   {
    "nombre": "Mimic Tear Ashes",
@@ -374,7 +390,8 @@
    "endpoint": "spirits",
    "categoria": "invocaciones",
    "descripcion_respaldo": "Invoca una copia de ti mismo como ayuda.",
-   "marcadores": []
+   "marcadores": [],
+   "descripcion_es": "Restos de ceniza legendarios. Sirven para invocar el espíritu de un Mimic Tear. La invocación consume PV en lugar de PC."
   },
   {
    "nombre": "Comet Azur",
@@ -382,7 +399,8 @@
    "endpoint": "sorceries",
    "categoria": "hechicerias",
    "descripcion_respaldo": "Hechicería que dispara un rayo de energía sostenido.",
-   "marcadores": []
+   "marcadores": [],
+   "descripcion_es": "Hechicería legendaria ideada por Azur, hechicero primigenio. Dispara un cometa colosal en un torrente similar a la lejana extensión estrellada, el lugar donde se dice que se originó la glintstone. Mantén pulsado para seguir liberando el poder de la hechicería. Cuando Azur se asomó a la corriente primigenia, solo vio oscuridad. Quedó hechizado y a la vez aterrado por el abismo."
   },
   {
    "nombre": "Flame, Grant Me Strength",
@@ -391,7 +409,8 @@
    "categoria": "conjuros",
    "descripcion_respaldo": "Conjuro que aumenta el daño físico.",
    "marcadores": [],
-   "imagen_local": "img/objetos/flame-grant-me-strength.jpg"
+   "imagen_local": "img/objetos/flame-grant-me-strength.jpg",
+   "descripcion_es": "Conjuro que aumenta el daño físico."
   },
   {
    "nombre": "Golden Seed",
@@ -399,7 +418,8 @@
    "endpoint": "items",
    "categoria": "objetos",
    "descripcion_respaldo": "Objeto que aumenta los usos del frasco de sangre dorada.",
-   "marcadores": []
+   "marcadores": [],
+   "descripcion_es": "Una semilla dorada, hallada en la base de un árbol ilusorio."
   }
  ]
 }
