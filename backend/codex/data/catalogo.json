@@ -1,0 +1,405 @@
+{
+ "capas": [
+  {
+   "slug": "superficie",
+   "nombre": "Superficie",
+   "imagen": "img/mapas/web/superficie.jpg",
+   "ancho": 4000,
+   "alto": 3782,
+   "subterranea": false,
+   "orden": 0
+  },
+  {
+   "slug": "siofra-river",
+   "nombre": "Siofra River",
+   "imagen": "img/mapas/web/siofra_river.jpg",
+   "ancho": 2000,
+   "alto": 2000,
+   "subterranea": true,
+   "orden": 1
+  },
+  {
+   "slug": "ainsel-river",
+   "nombre": "Ainsel River",
+   "imagen": "img/mapas/web/ainsel_river.jpg",
+   "ancho": 2000,
+   "alto": 2000,
+   "subterranea": true,
+   "orden": 2
+  },
+  {
+   "slug": "deeproot-depths",
+   "nombre": "Deeproot Depths",
+   "imagen": "img/mapas/web/deeproot_depths.jpg",
+   "ancho": 2000,
+   "alto": 2000,
+   "subterranea": true,
+   "orden": 3
+  }
+ ],
+ "categorias": [
+  {
+   "slug": "equipo",
+   "nombre": "Equipo",
+   "padre": null,
+   "pin": "weapon",
+   "endpoint": "",
+   "orden": 1
+  },
+  {
+   "slug": "magia",
+   "nombre": "Magia",
+   "padre": null,
+   "pin": "item",
+   "endpoint": "",
+   "orden": 2
+  },
+  {
+   "slug": "objetos",
+   "nombre": "Objetos",
+   "padre": null,
+   "pin": "item",
+   "endpoint": "items",
+   "orden": 3
+  },
+  {
+   "slug": "jefes",
+   "nombre": "Jefes",
+   "padre": null,
+   "pin": "boss",
+   "endpoint": "bosses",
+   "orden": 4
+  },
+  {
+   "slug": "localizaciones",
+   "nombre": "Localizaciones",
+   "padre": null,
+   "pin": "item",
+   "endpoint": "locations",
+   "orden": 5
+  },
+  {
+   "slug": "npcs",
+   "nombre": "NPCs",
+   "padre": null,
+   "pin": "npc",
+   "endpoint": "npcs",
+   "orden": 6
+  },
+  {
+   "slug": "criaturas",
+   "nombre": "Criaturas",
+   "padre": null,
+   "pin": "item",
+   "endpoint": "creatures",
+   "orden": 7
+  },
+  {
+   "slug": "armas",
+   "nombre": "Armas",
+   "padre": "equipo",
+   "pin": "",
+   "endpoint": "weapons",
+   "orden": 1
+  },
+  {
+   "slug": "armaduras",
+   "nombre": "Armaduras",
+   "padre": "equipo",
+   "pin": "",
+   "endpoint": "armors",
+   "orden": 2
+  },
+  {
+   "slug": "escudos",
+   "nombre": "Escudos",
+   "padre": "equipo",
+   "pin": "",
+   "endpoint": "shields",
+   "orden": 3
+  },
+  {
+   "slug": "talismanes",
+   "nombre": "Talismanes",
+   "padre": "equipo",
+   "pin": "talisman",
+   "endpoint": "talismans",
+   "orden": 4
+  },
+  {
+   "slug": "cenizas-de-guerra",
+   "nombre": "Cenizas de guerra",
+   "padre": "equipo",
+   "pin": "",
+   "endpoint": "ashes",
+   "orden": 5
+  },
+  {
+   "slug": "invocaciones",
+   "nombre": "Invocaciones",
+   "padre": "equipo",
+   "pin": "",
+   "endpoint": "spirits",
+   "orden": 6
+  },
+  {
+   "slug": "municion",
+   "nombre": "Munición",
+   "padre": "equipo",
+   "pin": "",
+   "endpoint": "ammos",
+   "orden": 7
+  },
+  {
+   "slug": "hechicerias",
+   "nombre": "Hechicerías",
+   "padre": "magia",
+   "pin": "",
+   "endpoint": "sorceries",
+   "orden": 1
+  },
+  {
+   "slug": "conjuros",
+   "nombre": "Conjuros",
+   "padre": "magia",
+   "pin": "",
+   "endpoint": "incantations",
+   "orden": 2
+  }
+ ],
+ "registros": [
+  {
+   "nombre": "Margit, the Fell Omen",
+   "buscar": "Margit",
+   "endpoint": "bosses",
+   "categoria": "jefes",
+   "descripcion_respaldo": "Jefe que guarda la entrada al castillo de Stormveil.",
+   "marcadores": [
+    {
+     "capa": "superficie",
+     "x": 34.5,
+     "y": 68.5,
+     "fase": ""
+    }
+   ],
+   "imagen_local": "img/objetos/margit-the-fell-omen.jpg"
+  },
+  {
+   "nombre": "Godrick the Grafted",
+   "buscar": "Godrick",
+   "endpoint": "bosses",
+   "categoria": "jefes",
+   "descripcion_respaldo": "Señor del castillo de Stormveil, el primero de los semidioses.",
+   "marcadores": [
+    {
+     "capa": "superficie",
+     "x": 33.5,
+     "y": 71.0,
+     "fase": ""
+    }
+   ]
+  },
+  {
+   "nombre": "Mimic Tear",
+   "buscar": "Mimic Tear",
+   "endpoint": "bosses",
+   "categoria": "jefes",
+   "descripcion_respaldo": "Jefe que copia tu equipo y tus ataques; está bajo la superficie.",
+   "marcadores": [
+    {
+     "capa": "siofra-river",
+     "x": 72.0,
+     "y": 58.0,
+     "fase": ""
+    }
+   ]
+  },
+  {
+   "nombre": "Starscourge Radahn",
+   "buscar": "Radahn",
+   "endpoint": "bosses",
+   "categoria": "jefes",
+   "descripcion_respaldo": "Semidiós del festival de la guerra, en Caelid.",
+   "marcadores": [
+    {
+     "capa": "superficie",
+     "x": 58.0,
+     "y": 69.0,
+     "fase": ""
+    }
+   ]
+  },
+  {
+   "nombre": "Malenia, Blade of Miquella",
+   "buscar": "Malenia",
+   "endpoint": "bosses",
+   "categoria": "jefes",
+   "descripcion_respaldo": "Jefa opcional del Haligtree, bajo la ciudad de Elphael.",
+   "marcadores": [
+    {
+     "capa": "superficie",
+     "x": 57.0,
+     "y": 9.0,
+     "fase": ""
+    }
+   ]
+  },
+  {
+   "nombre": "Blaidd the Half-Wolf",
+   "buscar": "Blaidd",
+   "endpoint": "npcs",
+   "categoria": "npcs",
+   "descripcion_respaldo": "Guerrero lobo que cambia de lugar según avanzas en su misión.",
+   "marcadores": [
+    {
+     "capa": "superficie",
+     "x": 40.0,
+     "y": 79.0,
+     "fase": "Mistwood Ruins",
+     "orden": 1
+    },
+    {
+     "capa": "superficie",
+     "x": 40.0,
+     "y": 88.0,
+     "fase": "Forlorn Hound Evergaol",
+     "orden": 2
+    },
+    {
+     "capa": "superficie",
+     "x": 29.0,
+     "y": 57.0,
+     "fase": "Ranni’s Rise",
+     "orden": 3
+    },
+    {
+     "capa": "siofra-river",
+     "x": 38.0,
+     "y": 40.0,
+     "fase": "Siofra River",
+     "orden": 4
+    },
+    {
+     "capa": "superficie",
+     "x": 57.0,
+     "y": 68.0,
+     "fase": "Castillo Redmane (Radahn)",
+     "orden": 5
+    }
+   ]
+  },
+  {
+   "nombre": "Melina",
+   "buscar": "Melina",
+   "endpoint": "npcs",
+   "categoria": "npcs",
+   "descripcion_respaldo": "Doncella que te ofrece su ayuda y te acompaña desde los primeros pasos.",
+   "marcadores": []
+  },
+  {
+   "nombre": "Sellen",
+   "buscar": "Sellen",
+   "endpoint": "npcs",
+   "categoria": "npcs",
+   "descripcion_respaldo": "Hechicera de la que se aprende magia; aparece en Waypoint Ruins.",
+   "marcadores": []
+  },
+  {
+   "nombre": "Uchigatana",
+   "buscar": "Uchigatana",
+   "endpoint": "weapons",
+   "categoria": "armas",
+   "descripcion_respaldo": "Katana ligera con sangrado.",
+   "marcadores": []
+  },
+  {
+   "nombre": "Moonveil",
+   "buscar": "Moonveil",
+   "endpoint": "weapons",
+   "categoria": "armas",
+   "descripcion_respaldo": "Katana mágica con una habilidad de ráfaga lunar.",
+   "marcadores": []
+  },
+  {
+   "nombre": "Rivers of Blood",
+   "buscar": "Rivers of Blood",
+   "endpoint": "weapons",
+   "categoria": "armas",
+   "descripcion_respaldo": "Katana de sangrado muy ofensiva.",
+   "marcadores": []
+  },
+  {
+   "nombre": "Raging Wolf Armor",
+   "buscar": "Raging Wolf",
+   "endpoint": "armors",
+   "categoria": "armaduras",
+   "descripcion_respaldo": "Armadura asociada a la misión de Blaidd.",
+   "marcadores": []
+  },
+  {
+   "nombre": "Carian Knight's Shield",
+   "buscar": "Carian Knight",
+   "endpoint": "shields",
+   "categoria": "escudos",
+   "descripcion_respaldo": "Escudo de la caballería caria.",
+   "marcadores": []
+  },
+  {
+   "nombre": "Radagon's Soreseal",
+   "buscar": "Radagon's Soreseal",
+   "endpoint": "talismans",
+   "categoria": "talismanes",
+   "descripcion_respaldo": "Talismán que aumenta atributos a cambio de más daño recibido.",
+   "marcadores": []
+  },
+  {
+   "nombre": "Erdtree's Favor",
+   "buscar": "Erdtree's Favor",
+   "endpoint": "talismans",
+   "categoria": "talismanes",
+   "descripcion_respaldo": "Talismán que aumenta vida, aguante y carga.",
+   "marcadores": []
+  },
+  {
+   "nombre": "Lion's Claw",
+   "buscar": "Lion's Claw",
+   "endpoint": "ashes",
+   "categoria": "cenizas-de-guerra",
+   "descripcion_respaldo": "Ceniza de guerra con un salto de garra.",
+   "marcadores": []
+  },
+  {
+   "nombre": "Mimic Tear Ashes",
+   "buscar": "Mimic Tear",
+   "endpoint": "spirits",
+   "categoria": "invocaciones",
+   "descripcion_respaldo": "Invoca una copia de ti mismo como ayuda.",
+   "marcadores": []
+  },
+  {
+   "nombre": "Comet Azur",
+   "buscar": "Comet Azur",
+   "endpoint": "sorceries",
+   "categoria": "hechicerias",
+   "descripcion_respaldo": "Hechicería que dispara un rayo de energía sostenido.",
+   "marcadores": []
+  },
+  {
+   "nombre": "Flame, Grant Me Strength",
+   "buscar": "Flame, Grant Me Strength",
+   "endpoint": "incantations",
+   "categoria": "conjuros",
+   "descripcion_respaldo": "Conjuro que aumenta el daño físico.",
+   "marcadores": [],
+   "imagen_local": "img/objetos/flame-grant-me-strength.jpg"
+  },
+  {
+   "nombre": "Golden Seed",
+   "buscar": "Golden Seed",
+   "endpoint": "items",
+   "categoria": "objetos",
+   "descripcion_respaldo": "Objeto que aumenta los usos del frasco de sangre dorada.",
+   "marcadores": []
+  }
+ ]
+}

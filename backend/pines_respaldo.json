@@ -1,0 +1,1390 @@
+[
+{
+  "model": "codex.categoria",
+  "pk": 1,
+  "fields": {
+    "nombre": "Equipo",
+    "slug": "equipo",
+    "padre": null,
+    "pin": "weapon",
+    "endpoint_api": "",
+    "orden": 1
+  }
+},
+{
+  "model": "codex.categoria",
+  "pk": 2,
+  "fields": {
+    "nombre": "Magia",
+    "slug": "magia",
+    "padre": null,
+    "pin": "item",
+    "endpoint_api": "",
+    "orden": 2
+  }
+},
+{
+  "model": "codex.categoria",
+  "pk": 3,
+  "fields": {
+    "nombre": "Objetos",
+    "slug": "objetos",
+    "padre": null,
+    "pin": "item",
+    "endpoint_api": "items",
+    "orden": 3
+  }
+},
+{
+  "model": "codex.categoria",
+  "pk": 4,
+  "fields": {
+    "nombre": "Jefes",
+    "slug": "jefes",
+    "padre": null,
+    "pin": "boss",
+    "endpoint_api": "bosses",
+    "orden": 4
+  }
+},
+{
+  "model": "codex.categoria",
+  "pk": 5,
+  "fields": {
+    "nombre": "Localizaciones",
+    "slug": "localizaciones",
+    "padre": null,
+    "pin": "item",
+    "endpoint_api": "locations",
+    "orden": 5
+  }
+},
+{
+  "model": "codex.categoria",
+  "pk": 6,
+  "fields": {
+    "nombre": "NPCs",
+    "slug": "npcs",
+    "padre": null,
+    "pin": "npc",
+    "endpoint_api": "npcs",
+    "orden": 6
+  }
+},
+{
+  "model": "codex.categoria",
+  "pk": 7,
+  "fields": {
+    "nombre": "Criaturas",
+    "slug": "criaturas",
+    "padre": null,
+    "pin": "item",
+    "endpoint_api": "creatures",
+    "orden": 7
+  }
+},
+{
+  "model": "codex.categoria",
+  "pk": 8,
+  "fields": {
+    "nombre": "Armas",
+    "slug": "armas",
+    "padre": 1,
+    "pin": "",
+    "endpoint_api": "weapons",
+    "orden": 1
+  }
+},
+{
+  "model": "codex.categoria",
+  "pk": 9,
+  "fields": {
+    "nombre": "Armaduras",
+    "slug": "armaduras",
+    "padre": 1,
+    "pin": "",
+    "endpoint_api": "armors",
+    "orden": 2
+  }
+},
+{
+  "model": "codex.categoria",
+  "pk": 10,
+  "fields": {
+    "nombre": "Escudos",
+    "slug": "escudos",
+    "padre": 1,
+    "pin": "",
+    "endpoint_api": "shields",
+    "orden": 3
+  }
+},
+{
+  "model": "codex.categoria",
+  "pk": 11,
+  "fields": {
+    "nombre": "Talismanes",
+    "slug": "talismanes",
+    "padre": 1,
+    "pin": "talisman",
+    "endpoint_api": "talismans",
+    "orden": 4
+  }
+},
+{
+  "model": "codex.categoria",
+  "pk": 12,
+  "fields": {
+    "nombre": "Cenizas de guerra",
+    "slug": "cenizas-de-guerra",
+    "padre": 1,
+    "pin": "",
+    "endpoint_api": "ashes",
+    "orden": 5
+  }
+},
+{
+  "model": "codex.categoria",
+  "pk": 13,
+  "fields": {
+    "nombre": "Invocaciones",
+    "slug": "invocaciones",
+    "padre": 1,
+    "pin": "",
+    "endpoint_api": "spirits",
+    "orden": 6
+  }
+},
+{
+  "model": "codex.categoria",
+  "pk": 14,
+  "fields": {
+    "nombre": "Munición",
+    "slug": "municion",
+    "padre": 1,
+    "pin": "",
+    "endpoint_api": "ammos",
+    "orden": 7
+  }
+},
+{
+  "model": "codex.categoria",
+  "pk": 15,
+  "fields": {
+    "nombre": "Hechicerías",
+    "slug": "hechicerias",
+    "padre": 2,
+    "pin": "",
+    "endpoint_api": "sorceries",
+    "orden": 1
+  }
+},
+{
+  "model": "codex.categoria",
+  "pk": 16,
+  "fields": {
+    "nombre": "Conjuros",
+    "slug": "conjuros",
+    "padre": 2,
+    "pin": "",
+    "endpoint_api": "incantations",
+    "orden": 2
+  }
+},
+{
+  "model": "codex.capa",
+  "pk": 1,
+  "fields": {
+    "nombre": "Superficie",
+    "slug": "superficie",
+    "imagen": "img/mapas/web/superficie.jpg",
+    "ancho": 4000,
+    "alto": 3782,
+    "subterranea": false,
+    "orden": 0
+  }
+},
+{
+  "model": "codex.capa",
+  "pk": 2,
+  "fields": {
+    "nombre": "Siofra River",
+    "slug": "siofra-river",
+    "imagen": "img/mapas/web/siofra_river.jpg",
+    "ancho": 2000,
+    "alto": 2000,
+    "subterranea": true,
+    "orden": 1
+  }
+},
+{
+  "model": "codex.capa",
+  "pk": 3,
+  "fields": {
+    "nombre": "Ainsel River",
+    "slug": "ainsel-river",
+    "imagen": "img/mapas/web/ainsel_river.jpg",
+    "ancho": 2000,
+    "alto": 2000,
+    "subterranea": true,
+    "orden": 2
+  }
+},
+{
+  "model": "codex.capa",
+  "pk": 4,
+  "fields": {
+    "nombre": "Deeproot Depths",
+    "slug": "deeproot-depths",
+    "imagen": "img/mapas/web/deeproot_depths.jpg",
+    "ancho": 2000,
+    "alto": 2000,
+    "subterranea": true,
+    "orden": 3
+  }
+},
+{
+  "model": "codex.registro",
+  "pk": 1,
+  "fields": {
+    "nombre": "Margit, the Fell Omen",
+    "slug": "margit-the-fell-omen",
+    "categoria": 4,
+    "descripcion": "Jefe que guarda la entrada al castillo de Stormveil.",
+    "imagen_url": "",
+    "imagen_local": "img/objetos/margit-the-fell-omen.jpg",
+    "ubicacion_texto": "",
+    "api_id": "",
+    "datos": {}
+  }
+},
+{
+  "model": "codex.registro",
+  "pk": 2,
+  "fields": {
+    "nombre": "Godrick The Grafted",
+    "slug": "godrick-the-grafted",
+    "categoria": 4,
+    "descripcion": "Godrick the Grafted is the ruler of Stormveil Castle, wielding a large golden axe. He has grafted many arms on his body, a symbol of power to all those who might try to depose him.",
+    "imagen_url": "https://eldenring.fanapis.com/images/bosses/17f6953f0d5l0i1uthl5j30bc50wdo.png",
+    "imagen_local": "",
+    "ubicacion_texto": "Stormveil Castle",
+    "api_id": "17f6953f0d5l0i1uthl5j30bc50wdo",
+    "datos": {
+      "id": "17f6953f0d5l0i1uthl5j30bc50wdo",
+      "name": "Godrick The Grafted",
+      "image": "https://eldenring.fanapis.com/images/bosses/17f6953f0d5l0i1uthl5j30bc50wdo.png",
+      "region": "Limgrave",
+      "description": "Godrick the Grafted is the ruler of Stormveil Castle, wielding a large golden axe. He has grafted many arms on his body, a symbol of power to all those who might try to depose him.",
+      "location": "Stormveil Castle",
+      "drops": [
+        "Godrick's Great Rune, Remembrance of the Grafted"
+      ],
+      "healthPoints": "6080"
+    }
+  }
+},
+{
+  "model": "codex.registro",
+  "pk": 3,
+  "fields": {
+    "nombre": "Mimic Tear",
+    "slug": "mimic-tear",
+    "categoria": 4,
+    "descripcion": "An eccentric being capable of taking a comprehensive shape of its adversary, ranging from body features to armament.",
+    "imagen_url": "https://eldenring.fanapis.com/images/bosses/17f69e11c75l0i1uxa6gb2wpb12ipb.png",
+    "imagen_local": "",
+    "ubicacion_texto": "Nokron, Eternal City",
+    "api_id": "17f69e11c75l0i1uxa6gb2wpb12ipb",
+    "datos": {
+      "id": "17f69e11c75l0i1uxa6gb2wpb12ipb",
+      "name": "Mimic Tear",
+      "image": "https://eldenring.fanapis.com/images/bosses/17f69e11c75l0i1uxa6gb2wpb12ipb.png",
+      "region": "Limgrave",
+      "description": "An eccentric being capable of taking a comprehensive shape of its adversary, ranging from body features to armament.",
+      "location": "Nokron, Eternal City",
+      "drops": [
+        "10000 Runes",
+        "Larval Tear x2",
+        "Silver Tear Mask"
+      ],
+      "healthPoints": "≈19,536"
+    }
+  }
+},
+{
+  "model": "codex.registro",
+  "pk": 4,
+  "fields": {
+    "nombre": "Starscourge Radahn",
+    "slug": "starscourge-radahn",
+    "categoria": 4,
+    "descripcion": "General Radahn is cursed ever to wander. Eaten from the inside, by Malenia's scarlet rot, his Wits are long gone. Now he gathers the corpses of former friends and foes alike, gorging on them, like a dog.",
+    "imagen_url": "https://eldenring.fanapis.com/images/bosses/17f69dc74fdl0i1v1wz3qrzn19aps8.png",
+    "imagen_local": "",
+    "ubicacion_texto": "Caelid",
+    "api_id": "17f69dc74fdl0i1v1wz3qrzn19aps8",
+    "datos": {
+      "id": "17f69dc74fdl0i1v1wz3qrzn19aps8",
+      "name": "Starscourge Radahn",
+      "image": "https://eldenring.fanapis.com/images/bosses/17f69dc74fdl0i1v1wz3qrzn19aps8.png",
+      "region": "Caelid",
+      "description": "General Radahn is cursed ever to wander. Eaten from the inside, by Malenia's scarlet rot, his Wits are long gone. Now he gathers the corpses of former friends and foes alike, gorging on them, like a dog.",
+      "location": "Caelid",
+      "drops": [
+        "70,000 Runes",
+        "Remembrance of the Starscourge, Radahn's Great Rune"
+      ],
+      "healthPoints": "≈25,856"
+    }
+  }
+},
+{
+  "model": "codex.registro",
+  "pk": 5,
+  "fields": {
+    "nombre": "Malenia, Blade Of Miquella",
+    "slug": "malenia-blade-of-miquella",
+    "categoria": 4,
+    "descripcion": "...Heed my words. I am Malenia. Blade of Miquella. And I have never known defeat.",
+    "imagen_url": "https://eldenring.fanapis.com/images/bosses/17f69a48308l0i1ux3rigvv37tx84f.png",
+    "imagen_local": "",
+    "ubicacion_texto": "Elphael, Brace of the Haligtree",
+    "api_id": "17f69a48308l0i1ux3rigvv37tx84f",
+    "datos": {
+      "id": "17f69a48308l0i1ux3rigvv37tx84f",
+      "name": "Malenia, Blade Of Miquella",
+      "image": "https://eldenring.fanapis.com/images/bosses/17f69a48308l0i1ux3rigvv37tx84f.png",
+      "region": "Consecrated Snowfield",
+      "description": "...Heed my words. I am Malenia. Blade of Miquella. And I have never known defeat.",
+      "location": "Elphael, Brace of the Haligtree",
+      "drops": [
+        "Malenia's Great Rune",
+        "Remembrance of the Rot Goddess",
+        "480,000 Runes"
+      ],
+      "healthPoints": "≈26,128"
+    }
+  }
+},
+{
+  "model": "codex.registro",
+  "pk": 6,
+  "fields": {
+    "nombre": "Blaidd",
+    "slug": "blaidd-the-half-wolf",
+    "categoria": 6,
+    "descripcion": "Guerrero lobo que cambia de lugar según avanzas en su misión.",
+    "imagen_url": "https://eldenring.fanapis.com/images/npcs/17f6974b8aal0i2oq6qbzsegb120iw.png",
+    "imagen_local": "",
+    "ubicacion_texto": "Mistwood Ruins",
+    "api_id": "17f6974b8aal0i2oq6qbzsegb120iw",
+    "datos": {
+      "id": "17f6974b8aal0i2oq6qbzsegb120iw",
+      "name": "Blaidd",
+      "image": "https://eldenring.fanapis.com/images/npcs/17f6974b8aal0i2oq6qbzsegb120iw.png",
+      "quote": "The name's Blaidd. I'm looking for a man who goes by \"Darriwil.\"",
+      "location": "Mistwood Ruins",
+      "role": "Wolfman"
+    }
+  }
+},
+{
+  "model": "codex.registro",
+  "pk": 7,
+  "fields": {
+    "nombre": "Melina",
+    "slug": "melina",
+    "categoria": 6,
+    "descripcion": "Doncella que te ofrece su ayuda y te acompaña desde los primeros pasos.",
+    "imagen_url": "https://eldenring.fanapis.com/images/npcs/17f699a9d79l0i2olzmep3owqdj2z6.png",
+    "imagen_local": "",
+    "ubicacion_texto": "The beginning of the Tarnished's journey.",
+    "api_id": "17f699a9d79l0i2olzmep3owqdj2z6",
+    "datos": {
+      "id": "17f699a9d79l0i2olzmep3owqdj2z6",
+      "name": "Melina",
+      "image": "https://eldenring.fanapis.com/images/npcs/17f699a9d79l0i2olzmep3owqdj2z6.png",
+      "quote": "Have you heard of the finger maidens? They serve the Two Fingers, offering guidance, and aid, to the Tarnished. But you, I am afraid, are maidenless. I can play the role of maiden.",
+      "location": "The beginning of the Tarnished's journey.",
+      "role": "Maiden"
+    }
+  }
+},
+{
+  "model": "codex.registro",
+  "pk": 8,
+  "fields": {
+    "nombre": "Sorceress Sellen",
+    "slug": "sellen",
+    "categoria": 6,
+    "descripcion": "Hechicera de la que se aprende magia; aparece en Waypoint Ruins.",
+    "imagen_url": "https://eldenring.fanapis.com/images/npcs/17f69ddf39dl0i2ojm1riku8s6qxfs.png",
+    "imagen_local": "",
+    "ubicacion_texto": "Limgrave, Waypoint Ruins",
+    "api_id": "17f69ddf39dl0i2ojm1riku8s6qxfs",
+    "datos": {
+      "id": "17f69ddf39dl0i2ojm1riku8s6qxfs",
+      "name": "Sorceress Sellen",
+      "image": "https://eldenring.fanapis.com/images/npcs/17f69ddf39dl0i2ojm1riku8s6qxfs.png",
+      "quote": null,
+      "location": "Limgrave, Waypoint Ruins",
+      "role": "Sorceries Shop"
+    }
+  }
+},
+{
+  "model": "codex.registro",
+  "pk": 9,
+  "fields": {
+    "nombre": "Uchigatana",
+    "slug": "uchigatana",
+    "categoria": 8,
+    "descripcion": "A katana with a long single-edged curved blade.  A unique weapon wielded by the samurai from the Land of Reeds. The blade, with its undulating design, boasts extraordinary sharpness, and ts slash attacks cause blood loss.",
+    "imagen_url": "https://eldenring.fanapis.com/images/weapons/17f69cd8a23l0i1peugvwepjdkaqh.png",
+    "imagen_local": "",
+    "ubicacion_texto": "",
+    "api_id": "17f69cd8a23l0i1peugvwepjdkaqh",
+    "datos": {
+      "id": "17f69cd8a23l0i1peugvwepjdkaqh",
+      "name": "Uchigatana",
+      "image": "https://eldenring.fanapis.com/images/weapons/17f69cd8a23l0i1peugvwepjdkaqh.png",
+      "description": "A katana with a long single-edged curved blade.  A unique weapon wielded by the samurai from the Land of Reeds. The blade, with its undulating design, boasts extraordinary sharpness, and ts slash attacks cause blood loss.",
+      "attack": [
+        {
+          "name": "Phy",
+          "amount": 115
+        },
+        {
+          "name": "Mag",
+          "amount": 0
+        },
+        {
+          "name": "Fire",
+          "amount": 0
+        },
+        {
+          "name": "Ligt",
+          "amount": 0
+        },
+        {
+          "name": "Holy",
+          "amount": 0
+        },
+        {
+          "name": "Crit",
+          "amount": 100
+        }
+      ],
+      "defence": [
+        {
+          "name": "Phy",
+          "amount": 45
+        },
+        {
+          "name": "Mag",
+          "amount": 30
+        },
+        {
+          "name": "Fire",
+          "amount": 30
+        },
+        {
+          "name": "Ligt",
+          "amount": 30
+        },
+        {
+          "name": "Holy",
+          "amount": 30
+        },
+        {
+          "name": "Boost",
+          "amount": 30
+        }
+      ],
+      "scalesWith": [
+        {
+          "name": "Str",
+          "scaling": "D"
+        },
+        {
+          "name": "Dex",
+          "scaling": "D"
+        }
+      ],
+      "requiredAttributes": [
+        {
+          "name": "Str",
+          "amount": 11
+        },
+        {
+          "name": "Dex",
+          "amount": 15
+        }
+      ],
+      "category": "Katana",
+      "weight": 5.5
+    }
+  }
+},
+{
+  "model": "codex.registro",
+  "pk": 10,
+  "fields": {
+    "nombre": "Moonveil",
+    "slug": "moonveil",
+    "categoria": 8,
+    "descripcion": "Katana forged of glintstone. Masterpiece of a Sellian wordsmith.  Light enwreathes the blade when sheathed, explaining its Moonveil moniker.",
+    "imagen_url": "https://eldenring.fanapis.com/images/weapons/17f69a10accl0i1pfj7uwvc9kzei7d.png",
+    "imagen_local": "",
+    "ubicacion_texto": "",
+    "api_id": "17f69a10accl0i1pfj7uwvc9kzei7d",
+    "datos": {
+      "id": "17f69a10accl0i1pfj7uwvc9kzei7d",
+      "name": "Moonveil",
+      "image": "https://eldenring.fanapis.com/images/weapons/17f69a10accl0i1pfj7uwvc9kzei7d.png",
+      "description": "Katana forged of glintstone. Masterpiece of a Sellian wordsmith.  Light enwreathes the blade when sheathed, explaining its Moonveil moniker.",
+      "attack": [
+        {
+          "name": "Phy",
+          "amount": 73
+        },
+        {
+          "name": "Mag",
+          "amount": 87
+        },
+        {
+          "name": "Fire",
+          "amount": 0
+        },
+        {
+          "name": "Ligt",
+          "amount": 0
+        },
+        {
+          "name": "Holy",
+          "amount": 0
+        },
+        {
+          "name": "Crit",
+          "amount": 100
+        }
+      ],
+      "defence": [
+        {
+          "name": "Phy",
+          "amount": 31
+        },
+        {
+          "name": "Mag",
+          "amount": 57
+        },
+        {
+          "name": "Fire",
+          "amount": 26
+        },
+        {
+          "name": "Ligt",
+          "amount": 26
+        },
+        {
+          "name": "Holy",
+          "amount": 26
+        },
+        {
+          "name": "Boost",
+          "amount": 31
+        }
+      ],
+      "scalesWith": [
+        {
+          "name": "Str",
+          "scaling": "E"
+        },
+        {
+          "name": "Dex",
+          "scaling": "D"
+        },
+        {
+          "name": "Int",
+          "scaling": "C"
+        }
+      ],
+      "requiredAttributes": [
+        {
+          "name": "Str",
+          "amount": 12
+        },
+        {
+          "name": "Dex",
+          "amount": 18
+        },
+        {
+          "name": "Int",
+          "amount": 23
+        }
+      ],
+      "category": "Katana",
+      "weight": 6.5
+    }
+  }
+},
+{
+  "model": "codex.registro",
+  "pk": 11,
+  "fields": {
+    "nombre": "Rivers Of Blood",
+    "slug": "rivers-of-blood",
+    "categoria": 8,
+    "descripcion": "Weapon of Okina, swordsman from the Land of Reeds. A cursed weapon that has felled countless men.  When Mohg, the Lord of Blood, first felt Okina's sword, and madness, upon his flesh, he had a proposal, to offer Okina the life of a demon, whose thirst would never go unsated.",
+    "imagen_url": "https://eldenring.fanapis.com/images/weapons/17f6946d08bl0i1pfb4sevs913hvu.png",
+    "imagen_local": "",
+    "ubicacion_texto": "",
+    "api_id": "17f6946d08bl0i1pfb4sevs913hvu",
+    "datos": {
+      "id": "17f6946d08bl0i1pfb4sevs913hvu",
+      "name": "Rivers Of Blood",
+      "image": "https://eldenring.fanapis.com/images/weapons/17f6946d08bl0i1pfb4sevs913hvu.png",
+      "description": "Weapon of Okina, swordsman from the Land of Reeds. A cursed weapon that has felled countless men.  When Mohg, the Lord of Blood, first felt Okina's sword, and madness, upon his flesh, he had a proposal, to offer Okina the life of a demon, whose thirst would never go unsated.",
+      "attack": [
+        {
+          "name": "Phy",
+          "amount": 89
+        },
+        {
+          "name": "Mag",
+          "amount": 0
+        },
+        {
+          "name": "Fire",
+          "amount": 89
+        },
+        {
+          "name": "Ligt",
+          "amount": 0
+        },
+        {
+          "name": "Holy",
+          "amount": 0
+        },
+        {
+          "name": "Crit",
+          "amount": 100
+        }
+      ],
+      "defence": [
+        {
+          "name": "Phy",
+          "amount": 47
+        },
+        {
+          "name": "Mag",
+          "amount": 31
+        },
+        {
+          "name": "Fire",
+          "amount": 52
+        },
+        {
+          "name": "Ligt",
+          "amount": 31
+        },
+        {
+          "name": "Holy",
+          "amount": 31
+        },
+        {
+          "name": "Boost",
+          "amount": 32
+        }
+      ],
+      "scalesWith": [
+        {
+          "name": "Str",
+          "scaling": "E"
+        },
+        {
+          "name": "Dex",
+          "scaling": "D"
+        },
+        {
+          "name": "Arc",
+          "scaling": "D"
+        }
+      ],
+      "requiredAttributes": [
+        {
+          "name": "Str",
+          "amount": 12
+        },
+        {
+          "name": "Dex",
+          "amount": 18
+        },
+        {
+          "name": "Arc",
+          "amount": 20
+        }
+      ],
+      "category": "Katana",
+      "weight": 6.5
+    }
+  }
+},
+{
+  "model": "codex.registro",
+  "pk": 12,
+  "fields": {
+    "nombre": "Raging Wolf Armor (altered)",
+    "slug": "raging-wolf-armor",
+    "categoria": 9,
+    "descripcion": "Armor worn by Vargram the Raging Wolf, one of the first Tarnished to visit the Roundtable Hold.",
+    "imagen_url": "https://eldenring.fanapis.com/images/armors/17f693ea468l0i0o0hcm10o39gutsk.png",
+    "imagen_local": "",
+    "ubicacion_texto": "",
+    "api_id": "17f693ea468l0i0o0hcm10o39gutsk",
+    "datos": {
+      "id": "17f693ea468l0i0o0hcm10o39gutsk",
+      "name": "Raging Wolf Armor (altered)",
+      "image": "https://eldenring.fanapis.com/images/armors/17f693ea468l0i0o0hcm10o39gutsk.png",
+      "description": "Armor worn by Vargram the Raging Wolf, one of the first Tarnished to visit the Roundtable Hold.",
+      "category": "Chest Armor",
+      "dmgNegation": [
+        {
+          "name": "Phy",
+          "amount": 12
+        },
+        {
+          "name": "Strike",
+          "amount": 10
+        },
+        {
+          "name": "Slash",
+          "amount": 12
+        },
+        {
+          "name": "Pierce",
+          "amount": 12
+        },
+        {
+          "name": "Magic",
+          "amount": 8
+        },
+        {
+          "name": "Fire",
+          "amount": 10
+        },
+        {
+          "name": "Ligt",
+          "amount": 6
+        },
+        {
+          "name": "Holy",
+          "amount": 8
+        }
+      ],
+      "resistance": [
+        {
+          "name": "Immunity",
+          "amount": 25
+        },
+        {
+          "name": "Robustness",
+          "amount": 50
+        },
+        {
+          "name": "Focus",
+          "amount": 0
+        },
+        {
+          "name": "Vitality",
+          "amount": 10
+        },
+        {
+          "name": "Poise",
+          "amount": 0
+        }
+      ],
+      "weight": 9
+    }
+  }
+},
+{
+  "model": "codex.registro",
+  "pk": 13,
+  "fields": {
+    "nombre": "Carian Knight's Shield",
+    "slug": "carian-knights-shield",
+    "categoria": 10,
+    "descripcion": "A teardrop-shaped shield embedded with blue glintstones. Carried by knights who served the Carian royal family. Excels when facing magic or holy attacks. Just who were these knights preparing to fight?",
+    "imagen_url": "https://eldenring.fanapis.com/images/shields/17f6942eeabl0i12apjrp14m98cxmg.png",
+    "imagen_local": "",
+    "ubicacion_texto": "",
+    "api_id": "17f6942eeabl0i12apjrp14m98cxmg",
+    "datos": {
+      "id": "17f6942eeabl0i12apjrp14m98cxmg",
+      "name": "Carian Knight's Shield",
+      "image": "https://eldenring.fanapis.com/images/shields/17f6942eeabl0i12apjrp14m98cxmg.png",
+      "description": "A teardrop-shaped shield embedded with blue glintstones. Carried by knights who served the Carian royal family. Excels when facing magic or holy attacks. Just who were these knights preparing to fight?",
+      "attack": [
+        {
+          "name": "Phy",
+          "amount": 63
+        },
+        {
+          "name": "Mag63",
+          "amount": null
+        },
+        {
+          "name": "Fire",
+          "amount": 0
+        },
+        {
+          "name": "Ligt",
+          "amount": 0
+        },
+        {
+          "name": "Holy",
+          "amount": 0
+        },
+        {
+          "name": "Crit",
+          "amount": 100
+        }
+      ],
+      "defence": [
+        {
+          "name": "Phy",
+          "amount": 100
+        },
+        {
+          "name": "Mag",
+          "amount": 58
+        },
+        {
+          "name": "Fire",
+          "amount": 28
+        },
+        {
+          "name": "Ligt",
+          "amount": 19
+        },
+        {
+          "name": "Holy",
+          "amount": 54
+        },
+        {
+          "name": "Boost",
+          "amount": 47
+        }
+      ],
+      "scalesWith": [
+        {
+          "name": "STR",
+          "scaling": "D"
+        },
+        {
+          "name": "INT",
+          "scaling": "D"
+        },
+        {
+          "name": ""
+        },
+        {
+          "name": ""
+        }
+      ],
+      "requiredAttributes": [
+        {
+          "name": "STR",
+          "amount": 10
+        },
+        {
+          "name": "DEX",
+          "amount": 10
+        },
+        {
+          "name": "INT",
+          "amount": 15
+        }
+      ],
+      "category": "Medium Shield",
+      "weight": 4.5
+    }
+  }
+},
+{
+  "model": "codex.registro",
+  "pk": 14,
+  "fields": {
+    "nombre": "Radagon's Soreseal",
+    "slug": "radagons-soreseal",
+    "categoria": 11,
+    "descripcion": "This legendary talisman is an eye engraved with an Elden Rune, said to be the seal of King Consort Radagon.",
+    "imagen_url": "https://eldenring.fanapis.com/images/talismans/17f696a52c1l0i2su2ddt9cbw3bnog.png",
+    "imagen_local": "",
+    "ubicacion_texto": "",
+    "api_id": "17f696a52c1l0i2su2ddt9cbw3bnog",
+    "datos": {
+      "id": "17f696a52c1l0i2su2ddt9cbw3bnog",
+      "name": "Radagon's Soreseal",
+      "image": "https://eldenring.fanapis.com/images/talismans/17f696a52c1l0i2su2ddt9cbw3bnog.png",
+      "description": "This legendary talisman is an eye engraved with an Elden Rune, said to be the seal of King Consort Radagon.",
+      "effect": "Greatly raises attributes, but also increases damage taken"
+    }
+  }
+},
+{
+  "model": "codex.registro",
+  "pk": 15,
+  "fields": {
+    "nombre": "Erdtree's Favor",
+    "slug": "erdtrees-favor",
+    "categoria": 11,
+    "descripcion": "A talisman depicting a special blessing of the Erdtree. Slightly raises maximum HP, stamina, and equip load.",
+    "imagen_url": "https://eldenring.fanapis.com/images/talismans/17f69f205a0l0i2svmo2djg04dhvj4.png",
+    "imagen_local": "",
+    "ubicacion_texto": "",
+    "api_id": "17f69f205a0l0i2svmo2djg04dhvj4",
+    "datos": {
+      "id": "17f69f205a0l0i2svmo2djg04dhvj4",
+      "name": "Erdtree's Favor",
+      "image": "https://eldenring.fanapis.com/images/talismans/17f69f205a0l0i2svmo2djg04dhvj4.png",
+      "description": "A talisman depicting a special blessing of the Erdtree. Slightly raises maximum HP, stamina, and equip load.",
+      "effect": "Raises maximum HP, stamina and equip load"
+    }
+  }
+},
+{
+  "model": "codex.registro",
+  "pk": 16,
+  "fields": {
+    "nombre": "Ash Of War: Lion's Claw",
+    "slug": "lions-claw",
+    "categoria": 12,
+    "descripcion": "This Ash of War grants an armament the Heavy affinity and the following skill:\"Lion's Claw: Skill of the Redmanes, who fought alongside General Radahn. Somersault forwards, striking foes with armament.\"Usable on swords, axes, and hammers (small armaments and thrusting swords excepted).",
+    "imagen_url": "https://eldenring.fanapis.com/images/ashes/17f69a31a8al0hznf908v1nxqoxy0e.png",
+    "imagen_local": "",
+    "ubicacion_texto": "",
+    "api_id": "17f69a31a8al0hznf908v1nxqoxy0e",
+    "datos": {
+      "id": "17f69a31a8al0hznf908v1nxqoxy0e",
+      "name": "Ash Of War: Lion's Claw",
+      "image": "https://eldenring.fanapis.com/images/ashes/17f69a31a8al0hznf908v1nxqoxy0e.png",
+      "description": "This Ash of War grants an armament the Heavy affinity and the following skill:\"Lion's Claw: Skill of the Redmanes, who fought alongside General Radahn. Somersault forwards, striking foes with armament.\"Usable on swords, axes, and hammers (small armaments and thrusting swords excepted).",
+      "affinity": "Heavy",
+      "skill": "Lion's Claw"
+    }
+  }
+},
+{
+  "model": "codex.registro",
+  "pk": 17,
+  "fields": {
+    "nombre": "Mimic Tear Ashes",
+    "slug": "mimic-tear-ashes",
+    "categoria": 13,
+    "descripcion": "Legendary ashen remains. Use to summon the spirit of a mimic tear. Summoning consumes HP rather than FP.",
+    "imagen_url": "https://eldenring.fanapis.com/images/spirits/17f69b5bc8dl0i2redg5p2ojmuksvu.png",
+    "imagen_local": "",
+    "ubicacion_texto": "",
+    "api_id": "17f69b5bc8dl0i2redg5p2ojmuksvu",
+    "datos": {
+      "id": "17f69b5bc8dl0i2redg5p2ojmuksvu",
+      "name": "Mimic Tear Ashes",
+      "image": "https://eldenring.fanapis.com/images/spirits/17f69b5bc8dl0i2redg5p2ojmuksvu.png",
+      "description": "Legendary ashen remains. Use to summon the spirit of a mimic tear. Summoning consumes HP rather than FP.",
+      "fpCost": "0",
+      "hpCost": "660",
+      "effect": "Summons mimic tear spirit"
+    }
+  }
+},
+{
+  "model": "codex.registro",
+  "pk": 18,
+  "fields": {
+    "nombre": "Comet Azur",
+    "slug": "comet-azur",
+    "categoria": 15,
+    "descripcion": "Legendary sorcery devised by Azur, primeval sorcerer. Fires a tremendous comet in a torrent akin to the distant starry expanse, the place said to be the origin of glintstone. Hold to continue releasing the sorcery's power. When Azur glimpsed into the primeval current, he saw darkness. He was left both bewitched and fearful of the abyss.",
+    "imagen_url": "https://eldenring.fanapis.com/images/sorceries/17f69383db4l0hykt8reipbquz8e6t.png",
+    "imagen_local": "",
+    "ubicacion_texto": "",
+    "api_id": "17f69383db4l0hykt8reipbquz8e6t",
+    "datos": {
+      "id": "17f69383db4l0hykt8reipbquz8e6t",
+      "name": "Comet Azur",
+      "image": "https://eldenring.fanapis.com/images/sorceries/17f69383db4l0hykt8reipbquz8e6t.png",
+      "description": "Legendary sorcery devised by Azur, primeval sorcerer. Fires a tremendous comet in a torrent akin to the distant starry expanse, the place said to be the origin of glintstone. Hold to continue releasing the sorcery's power. When Azur glimpsed into the primeval current, he saw darkness. He was left both bewitched and fearful of the abyss.",
+      "type": "Sorceries",
+      "cost": 40,
+      "slots": 3,
+      "effects": "Fires a tremendous comet within a starry torrent",
+      "requires": [
+        {
+          "name": "Intelligence",
+          "amount": 60
+        },
+        {
+          "name": "Faith",
+          "amount": 0
+        },
+        {
+          "name": "Arcane",
+          "amount": 0
+        }
+      ]
+    }
+  }
+},
+{
+  "model": "codex.registro",
+  "pk": 19,
+  "fields": {
+    "nombre": "Flame, Grant Me Strength",
+    "slug": "flame-grant-me-strength",
+    "categoria": 16,
+    "descripcion": "Conjuro que aumenta el daño físico.",
+    "imagen_url": "",
+    "imagen_local": "img/objetos/flame-grant-me-strength.jpg",
+    "ubicacion_texto": "",
+    "api_id": "",
+    "datos": {}
+  }
+},
+{
+  "model": "codex.registro",
+  "pk": 20,
+  "fields": {
+    "nombre": "Golden Seed",
+    "slug": "golden-seed",
+    "categoria": 3,
+    "descripcion": "A golden seed, found at the base of an illusory tree.",
+    "imagen_url": "https://eldenring.fanapis.com/images/items/17f69561a93l0i1zn82gmca4ahwx1j.png",
+    "imagen_local": "",
+    "ubicacion_texto": "",
+    "api_id": "17f69561a93l0i1zn82gmca4ahwx1j",
+    "datos": {
+      "id": "17f69561a93l0i1zn82gmca4ahwx1j",
+      "name": "Golden Seed",
+      "image": "https://eldenring.fanapis.com/images/items/17f69561a93l0i1zn82gmca4ahwx1j.png",
+      "description": "A golden seed, found at the base of an illusory tree.",
+      "type": "- ",
+      "effect": "Increases Sacred Flask's number of uses"
+    }
+  }
+},
+{
+  "model": "codex.marcador",
+  "pk": 1,
+  "fields": {
+    "registro": 1,
+    "capa": 1,
+    "x": 34.56,
+    "y": 74.9,
+    "fase": "",
+    "orden": 1,
+    "verificado": true
+  }
+},
+{
+  "model": "codex.marcador",
+  "pk": 2,
+  "fields": {
+    "registro": 2,
+    "capa": 1,
+    "x": 32.23,
+    "y": 71.0,
+    "fase": "",
+    "orden": 1,
+    "verificado": true
+  }
+},
+{
+  "model": "codex.marcador",
+  "pk": 3,
+  "fields": {
+    "registro": 3,
+    "capa": 2,
+    "x": 23.67,
+    "y": 76.48,
+    "fase": "",
+    "orden": 1,
+    "verificado": true
+  }
+},
+{
+  "model": "codex.marcador",
+  "pk": 4,
+  "fields": {
+    "registro": 4,
+    "capa": 1,
+    "x": 65.46,
+    "y": 73.08,
+    "fase": "",
+    "orden": 1,
+    "verificado": true
+  }
+},
+{
+  "model": "codex.marcador",
+  "pk": 5,
+  "fields": {
+    "registro": 5,
+    "capa": 1,
+    "x": 59.63,
+    "y": 9.53,
+    "fase": "",
+    "orden": 1,
+    "verificado": true
+  }
+},
+{
+  "model": "codex.marcador",
+  "pk": 6,
+  "fields": {
+    "registro": 6,
+    "capa": 1,
+    "x": 45.9,
+    "y": 78.45,
+    "fase": "Mistwood Ruins",
+    "orden": 1,
+    "verificado": true
+  }
+},
+{
+  "model": "codex.marcador",
+  "pk": 7,
+  "fields": {
+    "registro": 6,
+    "capa": 1,
+    "x": 43.52,
+    "y": 83.94,
+    "fase": "Forlorn Hound Evergaol",
+    "orden": 2,
+    "verificado": true
+  }
+},
+{
+  "model": "codex.marcador",
+  "pk": 8,
+  "fields": {
+    "registro": 6,
+    "capa": 1,
+    "x": 16.81,
+    "y": 40.45,
+    "fase": "Ranni’s Rise",
+    "orden": 3,
+    "verificado": true
+  }
+},
+{
+  "model": "codex.marcador",
+  "pk": 9,
+  "fields": {
+    "registro": 6,
+    "capa": 2,
+    "x": 40.95,
+    "y": 69.09,
+    "fase": "Siofra River",
+    "orden": 4,
+    "verificado": true
+  }
+},
+{
+  "model": "codex.marcador",
+  "pk": 10,
+  "fields": {
+    "registro": 6,
+    "capa": 1,
+    "x": 65.27,
+    "y": 74.68,
+    "fase": "Castillo Redmane (Radahn)",
+    "orden": 5,
+    "verificado": true
+  }
+},
+{
+  "model": "codex.marcador",
+  "pk": 11,
+  "fields": {
+    "registro": 11,
+    "capa": 1,
+    "x": 62.17,
+    "y": 32.81,
+    "fase": "",
+    "orden": 1,
+    "verificado": true
+  }
+},
+{
+  "model": "codex.marcador",
+  "pk": 13,
+  "fields": {
+    "registro": 10,
+    "capa": 1,
+    "x": 49.93,
+    "y": 71.01,
+    "fase": "",
+    "orden": 1,
+    "verificado": true
+  }
+},
+{
+  "model": "codex.marcador",
+  "pk": 14,
+  "fields": {
+    "registro": 9,
+    "capa": 1,
+    "x": 40.05,
+    "y": 70.65,
+    "fase": "",
+    "orden": 1,
+    "verificado": true
+  }
+},
+{
+  "model": "codex.marcador",
+  "pk": 15,
+  "fields": {
+    "registro": 12,
+    "capa": 1,
+    "x": 43.5,
+    "y": 39.23,
+    "fase": "",
+    "orden": 1,
+    "verificado": true
+  }
+},
+{
+  "model": "codex.marcador",
+  "pk": 16,
+  "fields": {
+    "registro": 14,
+    "capa": 1,
+    "x": 61.74,
+    "y": 70.5,
+    "fase": "",
+    "orden": 1,
+    "verificado": true
+  }
+},
+{
+  "model": "codex.marcador",
+  "pk": 17,
+  "fields": {
+    "registro": 15,
+    "capa": 1,
+    "x": 38.74,
+    "y": 80.27,
+    "fase": "",
+    "orden": 1,
+    "verificado": true
+  }
+},
+{
+  "model": "codex.marcador",
+  "pk": 18,
+  "fields": {
+    "registro": 17,
+    "capa": 2,
+    "x": 26.91,
+    "y": 66.37,
+    "fase": "",
+    "orden": 1,
+    "verificado": true
+  }
+},
+{
+  "model": "codex.marcador",
+  "pk": 19,
+  "fields": {
+    "registro": 16,
+    "capa": 1,
+    "x": 50.3,
+    "y": 74.82,
+    "fase": "",
+    "orden": 1,
+    "verificado": true
+  }
+},
+{
+  "model": "codex.marcador",
+  "pk": 26,
+  "fields": {
+    "registro": 18,
+    "capa": 1,
+    "x": 25.54,
+    "y": 33.14,
+    "fase": "",
+    "orden": 1,
+    "verificado": true
+  }
+},
+{
+  "model": "codex.marcador",
+  "pk": 27,
+  "fields": {
+    "registro": 19,
+    "capa": 1,
+    "x": 50.56,
+    "y": 74.81,
+    "fase": "",
+    "orden": 1,
+    "verificado": true
+  }
+},
+{
+  "model": "codex.marcador",
+  "pk": 28,
+  "fields": {
+    "registro": 20,
+    "capa": 1,
+    "x": 45.56,
+    "y": 74.82,
+    "fase": "",
+    "orden": 1,
+    "verificado": true
+  }
+},
+{
+  "model": "codex.marcador",
+  "pk": 29,
+  "fields": {
+    "registro": 8,
+    "capa": 1,
+    "x": 43.95,
+    "y": 79.25,
+    "fase": "",
+    "orden": 1,
+    "verificado": true
+  }
+},
+{
+  "model": "codex.marcador",
+  "pk": 30,
+  "fields": {
+    "registro": 7,
+    "capa": 1,
+    "x": 38.78,
+    "y": 76.07,
+    "fase": "",
+    "orden": 1,
+    "verificado": true
+  }
+},
+{
+  "model": "codex.marcador",
+  "pk": 31,
+  "fields": {
+    "registro": 13,
+    "capa": 1,
+    "x": 20.08,
+    "y": 53.29,
+    "fase": "",
+    "orden": 1,
+    "verificado": true
+  }
+}
+]
