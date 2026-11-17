@@ -14,6 +14,41 @@
   var esc = function (s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); };
   var norm = function (s) { return String(s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase(); };
 
+  /* ---------- Iconos de los pines (SVG propios, sin dependencias) ---------- */
+  var ICONOS = {
+    jefes: 'M12 3C7.6 3 4.5 6 4.5 10c0 2.4 1.1 4 2.5 5v3.5h2.5V17h1.5v1.5h3V17h1.5v1.5H17V15c1.4-1 2.5-2.6 2.5-5C19.5 6 16.4 3 12 3zM8.8 9a1.9 1.9 0 100 3.8 1.9 1.9 0 000-3.8zM15.2 9a1.9 1.9 0 100 3.8 1.9 1.9 0 000-3.8z',
+    npcs: 'M12 4a3.6 3.6 0 100 7.2A3.6 3.6 0 0012 4zM5 20.5c0-4.2 3.1-6.8 7-6.8s7 2.6 7 6.8z',
+    armas: 'M12 2l2.2 2.2V14h-4.4V4.2zM6.5 14.5h11v2h-11zM11 16.5h2V20h-2zM9.8 20h4.4v1.8H9.8z',
+    armaduras: 'M12 3C7.5 3 4.5 6.3 4.5 10.5V16c0 1.1.9 2 2 2H9v-4.2c0-.7.6-1.3 1.3-1.3h3.4c.7 0 1.3.6 1.3 1.3V18h2.5c1.1 0 2-.9 2-2v-5.5C19.5 6.3 16.5 3 12 3zM8 20h8v1.5H8z',
+    escudos: 'M12 2.5l8 3v6c0 5-3.4 8.4-8 10-4.6-1.6-8-5-8-10v-6z',
+    talismanes: 'M12 8.2a6 6 0 100 12 6 6 0 000-12zM12 10.8a3.4 3.4 0 110 6.8 3.4 3.4 0 010-6.8zM12 2l3 3.2-3 3.3-3-3.3z',
+    'cenizas-de-guerra': 'M12 2c1 3.5 5.5 6 5.5 11a5.5 5.5 0 11-11 0c0-2.2 1-3.6 2-4.6.2 1.6.8 2.4 1.7 2.8C10 8 10.8 4.5 12 2z',
+    invocaciones: 'M12 3a6.5 6.5 0 00-6.5 6.5V21l2.17-2 2.17 2 2.17-2 2.17 2 2.17-2 2.17 2V9.5A6.5 6.5 0 0012 3zM9.6 9.4a1.3 1.3 0 100 2.6 1.3 1.3 0 000-2.6zM14.4 9.4a1.3 1.3 0 100 2.6 1.3 1.3 0 000-2.6z',
+    hechicerias: 'M12 2l2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4z',
+    conjuros: 'M5 5a2 2 0 012-2h11.5v15H8a1.5 1.5 0 000 3h10.5v1.5H8A3 3 0 015 19z',
+    objetos: 'M12 2c3.5 4.5 6 7.7 6 11a6 6 0 11-12 0c0-3.3 2.5-6.5 6-11z',
+    localizaciones: 'M6 21V9l2-1V5h2v2h1V5h2v2h1V5h2v3l2 1v12h-4v-5a2 2 0 00-4 0v5z',
+    criaturas: 'M12 12c-3 0-5 2.3-5 4.6 0 1.7 1.3 2.4 2.7 2.4.9 0 1.5-.4 2.3-.4s1.4.4 2.3.4c1.4 0 2.7-.7 2.7-2.4C17 14.3 15 12 12 12zM6.5 8.3a1.7 2.2 0 100 4.4 1.7 2.2 0 000-4.4zM10 4.8a1.7 2.2 0 100 4.4 1.7 2.2 0 000-4.4zM14 4.8a1.7 2.2 0 100 4.4 1.7 2.2 0 000-4.4zM17.5 8.3a1.7 2.2 0 100 4.4 1.7 2.2 0 000-4.4z',
+    municion: 'M12 2l4.5 5H13v10.5h-2V7H7.5zM8 19h8v2H8z',
+    equipo: 'M12 2l2.2 2.2V14h-4.4V4.2zM6.5 14.5h11v2h-11zM11 16.5h2V20h-2zM9.8 20h4.4v1.8H9.8z',
+    magia: 'M12 2l2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4z'
+  };
+  function claveIcono(r) { return ICONOS[r.categoria] ? r.categoria : (ICONOS[r.grupo] ? r.grupo : 'objetos'); }
+  function tipoPin(r) { return r.grupo === 'magia' ? 'magic' : r.pin; }
+  function svgIcono(clave) {
+    return '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="' + (ICONOS[clave] || ICONOS.objetos) + '"/></svg>';
+  }
+  function dibujarLeyenda() {
+    var el = $('leyenda');
+    if (!el) return;
+    var items = [['Jefes', 'jefes', 'boss'], ['NPCs', 'npcs', 'npc'], ['Armas', 'armas', 'weapon'], ['Armaduras', 'armaduras', 'weapon'],
+      ['Escudos', 'escudos', 'weapon'], ['Talismanes', 'talismanes', 'talisman'], ['Cenizas de guerra', 'cenizas-de-guerra', 'weapon'],
+      ['Invocaciones', 'invocaciones', 'weapon'], ['Hechicerías', 'hechicerias', 'magic'], ['Conjuros', 'conjuros', 'magic'], ['Otros', 'objetos', 'item']];
+    el.innerHTML = items.map(function (i) {
+      return '<div><span class="mini ' + i[2] + '">' + svgIcono(i[1]) + '</span>' + i[0] + '</div>';
+    }).join('');
+  }
+
   var capaBy = {}, catBy = {}, regBy = {};
   D.capas.forEach(function (c) { capaBy[c.slug] = c; });
   D.categorias.forEach(function (c) { catBy[c.slug] = c; });
@@ -68,10 +103,11 @@
         var esSel = st.sel === r.slug && (!multi || i === st.fase);
         var icon = L.divIcon({
           className: 'pin-wrap', iconSize: [0, 0],
-          html: '<span class="pin ' + esc(r.pin) + (esSel ? ' sel' : '') + '">' + (multi ? '<span>' + (i + 1) + '</span>' : '') + '</span>'
+          html: '<span class="pin ' + esc(tipoPin(r)) + (esSel ? ' sel' : '') + '">' + svgIcono(claveIcono(r)) + '</span>' +
+            (multi ? '<b class="pn' + (esSel ? ' sel' : '') + '">' + (i + 1) + '</b>' : '')
         });
         var mk = L.marker(llng(capa, m.x, m.y), { icon: icon, title: r.nombre, zIndexOffset: esSel ? 1000 : 0 }).addTo(gPines);
-        mk.bindPopup(popupHtml(r, m), { offset: [0, -22] });
+        mk.bindPopup(popupHtml(r, m), { offset: [0, -34] });
         mk.on('click', function () { seleccionar(r.slug, i, true); });
         if (esSel && !mk.isPopupOpen()) setTimeout(function () { mk.openPopup(); }, 0);
       });
@@ -270,6 +306,7 @@
   var params = new URLSearchParams(location.search);
   var inicial = params.get('registro');
   try {
+    dibujarLeyenda();
     mostrarCapa(st.capa);
     renderPanel();
     if (inicial && regBy[inicial]) {

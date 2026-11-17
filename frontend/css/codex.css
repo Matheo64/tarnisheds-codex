@@ -3,7 +3,7 @@
   --gold:#c19d53;--gold-deep:#8f7a45;--gold-pale:#f8e898;
   --teal:#1c5a64;--night:#061726;--black:#010310;
   --ivory:#e9e2cf;--soft:#b9b09a;
-  --boss:#c19d53;--weapon:#b5694a;--talisman:#6fa59b;--npc:#8c86c4;--item:#a8a08c;
+  --boss:#c19d53;--weapon:#b5694a;--talisman:#6fa59b;--npc:#8c86c4;--item:#a8a08c;--magic:#5d86c9;
   --head:'Cinzel','GFS Baskerville',Georgia,serif;
   --body:'Cormorant Garamond',Georgia,serif;
 }
@@ -25,7 +25,9 @@ a{color:var(--gold-pale)}
 .pill{display:inline-block;width:fit-content;background:linear-gradient(#cfae66,#9a7a3c);color:var(--black);border-radius:999px;padding:2px 12px;font:700 11px var(--head);letter-spacing:.1em;text-transform:uppercase}
 .dot{display:inline-block;width:10px;height:10px;border-radius:50%;border:1px solid #1a1405;margin-right:4px}
 .dot.boss,.pin.boss{background:var(--boss)}.dot.weapon,.pin.weapon{background:var(--weapon)}.dot.talisman,.pin.talisman{background:var(--talisman)}
-.dot.npc,.pin.npc{background:var(--npc)}.dot.item,.pin.item{background:var(--item)}
+.dot.npc,.pin.npc,.mini.npc{background:var(--npc)}.dot.item,.pin.item,.mini.item{background:var(--item)}
+.mini.boss{background:var(--boss)}.mini.weapon{background:var(--weapon)}.mini.talisman{background:var(--talisman)}
+.pin.magic,.mini.magic{background:var(--magic)}
 
 /* Pantalla del mapa */
 .stage{position:fixed;inset:56px 0 0 0;background:#03080f;overflow:hidden}
@@ -45,11 +47,18 @@ a{color:var(--gold-pale)}
 .badge{position:absolute;left:50%;top:14px;transform:translateX(-50%);z-index:700;padding:5px 18px;border:1px solid var(--gold);background:rgba(2,8,18,.92);font:700 12px var(--head);letter-spacing:.14em;text-transform:uppercase;color:var(--gold-pale)}
 .legend{position:absolute;left:14px;bottom:14px;z-index:700;background:rgba(2,8,18,.9);border:1px solid var(--gold-deep);padding:8px 14px;font-size:16px;line-height:1.35}
 
-/* Pines (gota) */
+/* Pines (gota con el icono de su categoría) */
 .pin-wrap{background:none;border:none}
-.pin{display:block;width:22px;height:22px;margin:-24px 0 0 -11px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);border:2px solid #1a1405;box-shadow:0 3px 6px rgba(0,0,0,.7);position:relative}
-.pin span{position:absolute;inset:0;transform:rotate(45deg);display:grid;place-items:center;font:700 11px var(--head);color:var(--black)}
-.pin.sel{width:28px;height:28px;margin:-32px 0 0 -14px;box-shadow:0 0 0 4px rgba(193,157,83,.4),0 3px 8px #000}
+.pin{display:block;width:30px;height:30px;margin:-36px 0 0 -15px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);border:2px solid #1a1405;box-shadow:0 3px 6px rgba(0,0,0,.7);position:relative}
+.pin svg{position:absolute;inset:0;margin:auto;width:64%;height:64%;transform:rotate(45deg);fill:var(--black)}
+.pin.sel{width:36px;height:36px;margin:-44px 0 0 -18px;box-shadow:0 0 0 4px rgba(193,157,83,.45),0 3px 8px #000}
+.pn{position:absolute;left:7px;top:-40px;min-width:16px;height:16px;padding:0 3px;border-radius:8px;background:var(--black);border:1px solid var(--gold);color:var(--gold-pale);font:700 10px/14px var(--head);text-align:center;z-index:2}
+.pn.sel{left:11px;top:-48px}
+.legend .lg{display:grid;grid-template-columns:1fr 1fr;gap:3px 16px;margin-top:4px}
+.legend .lg>div{display:flex;align-items:center;gap:7px;font-size:15px;white-space:nowrap}
+.mini{display:inline-grid;place-items:center;width:20px;height:20px;border-radius:50%;border:1px solid #1a1405;flex:none}
+.mini svg{width:70%;height:70%;fill:var(--black)}
+
 .leaflet-container .leaflet-popup-content-wrapper{background:#050d19;color:var(--ivory);border:1px solid var(--gold);border-radius:3px;box-shadow:0 0 0 2px var(--black),0 0 0 3px var(--gold-deep),0 8px 20px #000}
 .leaflet-container .leaflet-popup-tip{background:#050d19;border:1px solid var(--gold)}
 .leaflet-container .leaflet-popup-content{margin:12px 14px;font:400 17px/1.35 var(--body)}
